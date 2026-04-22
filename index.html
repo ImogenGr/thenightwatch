@@ -7,6 +7,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;0,900;1,400;1,700&family=Cinzel:wght@400;500;600&family=Source+Serif+4:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="https://sibforms.com/forms/end-form/build/sib-styles.css"/>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
 :root{
@@ -129,9 +130,10 @@ nav{
 .prog-overlay{position:absolute;inset:0;background:linear-gradient(180deg,transparent 40%,rgba(0,0,0,.55) 100%);}
 .prog-label{position:absolute;bottom:16px;left:20px;right:20px;font-family:'Playfair Display',serif;font-size:1.1rem;font-style:italic;color:#fff;font-weight:700;line-height:1.3;}
 .prog-body{padding:26px 28px 34px;}
-.prog-era{font-family:'Cinzel',serif;font-size:.56rem;letter-spacing:.2em;text-transform:uppercase;color:var(--ink);margin-bottom:10px;}
-.prog-body p{font-size:.88rem;color:var(--mid);line-height:1.72;}
-.prog-body a{display:inline-block;margin-top:16px;font-family:'Cinzel',serif;font-size:.58rem;letter-spacing:.16em;text-transform:uppercase;color:var(--ink);text-decoration:none;border-bottom:1px solid var(--border);padding-bottom:2px;transition:border-color .2s;}
+.prog-era{font-family:'Cinzel',serif;font-size:.62rem;letter-spacing:.2em;text-transform:uppercase;color:var(--ink);margin-bottom:10px;}
+.prog-body p{font-size:1rem;color:var(--ink);line-height:1.8;}
+.prog-body li{font-size:.95rem;color:var(--ink);}
+.prog-body a{display:inline-block;margin-top:16px;font-family:'Cinzel',serif;font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;color:var(--ink);text-decoration:none;border-bottom:1px solid var(--border);padding-bottom:2px;transition:border-color .2s;}
 .prog-body a:hover{border-color:var(--ink);}
 
 /* NEWS */
@@ -379,7 +381,7 @@ footer ul a:hover{color:#fff;}
             <li>Bethany Angus | harpsichord</li>
             <li>Imogen Granwal | viola da gamba</li>
           </ul>
-          <a href="https://www.facebook.com/WatchEarlyMusic" target="_blank">Learn more →</a>
+          <a href="https://www.facebook.com/WatchEarlyMusic" target="_blank">Buy tickets →</a>
         </div>
       </div>
 
@@ -403,7 +405,7 @@ footer ul a:hover{color:#fff;}
             <li>Malcolm Struthers | baroque bass</li>
             <li>Ben Whitton | percussion</li>
           </ul>
-          <a href="https://www.facebook.com/WatchEarlyMusic" target="_blank">Learn more →</a>
+          <a href="https://www.facebook.com/WatchEarlyMusic" target="_blank">Buy tickets →</a>
         </div>
       </div>
 
@@ -424,7 +426,7 @@ footer ul a:hover{color:#fff;}
             <li>Kamala Bain | recorders</li>
             <li>Imogen Granwal | viola da gamba</li>
           </ul>
-          <a href="https://www.facebook.com/WatchEarlyMusic" target="_blank">Learn more →</a>
+          <a href="https://www.facebook.com/WatchEarlyMusic" target="_blank">Buy tickets →</a>
         </div>
       </div>
 
@@ -450,9 +452,9 @@ footer ul a:hover{color:#fff;}
   <div class="feature-split">
     <div class="feature-text bg-teal">
       <p class="feat-label">Support Us</p>
-      <h2>An Invitation to Shape<br/><em>the Future of Baroque in Aotearoa</em></h2>
-      <p>In just six years, we have presented 14 thematically curated concerts and built a deeply committed Wellington audience. We now stand at a pivotal moment: ready to embed our annual seasons sustainably and expand our reach beyond the capital.</p>
-      <p>To do so, we are seeking visionary supporters who believe in artistic excellence and the cultural future of Aotearoa.</p>
+      <h2>An Invitation to Shape<br/><em>the Future of Early Music in Aotearoa</em></h2>
+      <p>Our model prioritises artistic integrity and audience experience over scale. We choose intimate venues, keep ticket prices accessible, and engage specialist musicians from across Aotearoa and Australia. As a result, our production costs will always exceed box office revenue — and private support is essential to sustaining this work.</p>
+      <p>In just six years, we have presented 14 thematically curated concerts and built a deeply committed Wellington audience. We now stand at a pivotal moment: ready to embed our annual seasons sustainably and expand our reach beyond the capital. To do so, we are seeking visionary supporters who believe in artistic excellence and the cultural future of Aotearoa.</p>
       <button class="modal-more-btn" onclick="document.getElementById('supportModal').classList.add('open')">More info →</button>
     </div>
     <div class="feature-img">
@@ -596,6 +598,23 @@ footer ul a:hover{color:#fff;}
       </div>
     </div>
 
+    <div class="newsletter">
+      <h3>Stay in touch</h3>
+      <p>Sign up to receive news of upcoming concerts and announcements from The Night Watch.</p>
+      <form id="sib-form" method="POST" action="https://b83cc1c2.sibforms.com/serve/MUIFAGUT1QlfcCBxvLFCjuqPjzhupAr7EWnjABN3Rgq0eZH75FUwDswi4Fk6v_tIXPlZbA4CJiaSe-9HLWGB6NmDaXiWbFrTpF5qzHjiMWeEeKHAEBd-DaEcov-F5GVFaua1FCqQmypR_8NOnvFzVkGF3rP_VN0wnb0BJ1s4k0kurq6TY8XL_MYr58oOHCQtflkCumSCZapugB1hew==" data-type="subscription" style="display:flex;flex-direction:column;gap:12px;">
+        <div id="error-message" class="sib-form-message-panel" style="display:none;font-size:14px;font-family:Helvetica,sans-serif;color:#661d1d;background-color:#ffeded;border-radius:3px;border:1px solid #ff4949;padding:10px;">
+          Your subscription could not be saved. Please try again.
+        </div>
+        <div id="success-message" class="sib-form-message-panel" style="display:none;font-size:14px;font-family:Helvetica,sans-serif;color:#085229;background-color:#e7faf0;border-radius:3px;border:1px solid #13ce66;padding:10px;">
+          Your subscription has been successful.
+        </div>
+        <input type="text" id="EMAIL" name="EMAIL" autocomplete="off" placeholder="Your email address" required style="border:1px solid var(--border);background:var(--cream);color:var(--ink);font-family:'Source Serif 4',serif;font-size:.95rem;padding:13px 16px;outline:none;transition:border-color .2s;"/>
+        <button type="submit" form="sib-form" style="font-family:'Cinzel',serif;font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;background:var(--teal);color:#fff;border:none;padding:15px;cursor:pointer;transition:background .2s;">Subscribe to our newsletter</button>
+        <input type="text" name="email_address_check" value="" style="display:none;">
+        <input type="hidden" name="locale" value="en">
+      </form>
+    </div>
+
   </div>
 </section>
 
@@ -634,7 +653,6 @@ footer ul a:hover{color:#fff;}
     <button class="modal-close" onclick="document.getElementById('supportModal').classList.remove('open')" aria-label="Close">&#x2715;</button>
 
     <h3>Why Your Support Matters</h3>
-    <p>Our model prioritises artistic integrity and audience experience over scale. We choose intimate venues. We keep ticket prices accessible. We engage specialist musicians from across New Zealand and Australia. This means our production costs will always exceed box office revenue.</p>
     <p>Your support ensures that:</p>
     <ul>
       <li>historically informed Baroque performance thrives in New Zealand</li>
@@ -642,7 +660,7 @@ footer ul a:hover{color:#fff;}
       <li>audiences experience world-class performance in deeply human settings</li>
       <li>rare and emotionally powerful repertoire continues to be rediscovered and heard</li>
     </ul>
-    <p><em>Without private investment, this level of artistic ambition is not possible.</em></p>
+    <p><em>Without private investment, this level of artistic ambition — and its impact — would not be possible.</em></p>
 
     <div class="modal-rule"></div>
 
@@ -651,43 +669,46 @@ footer ul a:hover{color:#fff;}
     <h4>Artistic Excellence</h4>
     <p>Specialist performers, rigorous rehearsal processes, and historically informed interpretation at the highest professional standard.</p>
     <h4>Cultural Distinctiveness</h4>
-    <p>A performance offering that fills a clear gap in Aotearoa's music landscape — intimate, chamber-scale Baroque presented as living art.</p>
+    <p>A performance offering that fills a clear gap in Aotearoa's music landscape — intimate, chamber-scale baroque music presented as living, expressive art.</p>
     <h4>Artist Sustainability</h4>
     <p>Meaningful, paid opportunities for mid-career musicians who have dedicated their lives to this specialised artform.</p>
     <h4>Audience Transformation</h4>
-    <p>Concerts designed to nourish, restore, and awaken — experiences that remain with audiences long after the final note.</p>
+    <p>Concerts designed to nourish, restore, and awaken — experiences that resonate long after the final note.</p>
+    <h4>Accessibility</h4>
+    <p>Increased private support will enable us to price tickets affordably, eliminating barriers to attendance and increasing our reach.</p>
 
     <div class="modal-rule"></div>
 
-    <h3>2026 Season – The Natural World</h3>
-    <p>Our 2026 season will explore humanity's relationship with the natural world through three thematically curated programmes. To realise this vision, we must cover:</p>
+    <h3>2026 Season – The Elements Unleashed</h3>
+    <p>Our 2026 season explores humanity's relationship with the natural world through three thematically curated programmes. To realise this vision, we must cover:</p>
     <ul>
-      <li>Artist travel (Sydney, Auckland, Hamilton)</li>
+      <li>Artist travel (Sydney, Brisbane, Auckland, Hamilton)</li>
       <li>Fair artist fees</li>
       <li>Venue hire</li>
       <li>Production design and lighting</li>
       <li>Instrument transport and tuning</li>
     </ul>
-    <p>We are seeking support across these areas and welcome discussions about named programme sponsorship, artist underwriting, or season partnership.</p>
+    <p>We are seeking support across these areas and welcome discussions about named programme sponsorship, artist underwriting, or full season partnership.</p>
 
     <div class="modal-rule"></div>
 
     <h3>Ways to Partner With Us</h3>
+    <p>This season, we launch The Night Watch Charitable Trust, and an annual giving programme to help sustain our work. We invite founding patrons to partner with us to form a community of support and generate transformational sustainability for The Night Watch.</p>
     <p>We invite you to become:</p>
     <ul>
-      <li>A Season Partner</li>
-      <li>A Programme Sponsor</li>
-      <li>An Artist Patron</li>
-      <li>A Production Supporter</li>
-      <li>A Founding Sustainer of Annual Seasons</li>
+      <li>A Season Partner — $2,000</li>
+      <li>An Artist Patron — $1,000</li>
+      <li>A Production Supporter — $500</li>
+      <li>A Founding Sustainer of Annual Seasons — $100</li>
     </ul>
-    <p>We would be delighted to tailor recognition and engagement opportunities to reflect your level of support.</p>
+    <p><em>All donations are eligible for a 33% tax rebate.</em></p>
+    <p>We are delighted to tailor recognition and engagement opportunities to reflect your level of support, including opportunities to attend rehearsals and connect with our musicians.</p>
 
     <div class="modal-rule"></div>
 
     <h3>A Cultural Investment in Aotearoa</h3>
     <p>The Night Watch exists because we believe early music speaks urgently to contemporary life. Its emotional intensity, intimacy, and expressive depth offer something increasingly rare: focused listening, shared stillness, and genuine human connection.</p>
-    <p>Your support allows this work to continue — not as an occasional project, but as a sustained artistic presence in New Zealand's cultural landscape.</p>
+    <p>Your support ensures this work continues — not as an occasional project, but as a sustained and vital artistic presence in New Zealand's cultural landscape.</p>
     <p>We would welcome the opportunity to discuss how you might help secure the future of The Night Watch.</p>
 
   </div>
@@ -707,5 +728,15 @@ function goSlide(n){
 function changeSlide(d){goSlide(cur+d);}
 setInterval(()=>changeSlide(1),10000);
 </script>
+<script>
+  window.REQUIRED_CODE_ERROR_MESSAGE = 'Please choose a country code';
+  window.LOCALE = 'en';
+  window.EMAIL_INVALID_MESSAGE = window.SMS_INVALID_MESSAGE = "The information provided is invalid. Please review the field format and try again.";
+  window.REQUIRED_ERROR_MESSAGE = "This field cannot be left blank.";
+  window.GENERIC_INVALID_MESSAGE = "The information provided is invalid. Please review the field format and try again.";
+  window.translation = {common:{selectedList:'{quantity} list selected',selectedLists:'{quantity} lists selected',selectedOption:'{quantity} selected',selectedOptions:'{quantity} selected'}};
+  var AUTOHIDE = Boolean(0);
+</script>
+<script defer src="https://sibforms.com/forms/end-form/build/main.js"></script>
 </body>
 </html>
